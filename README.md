@@ -2,7 +2,7 @@
 
 Simulates Rigid Body Physics Resolving Collisions
 
-![](https://github.com/IrfanJames/SFML_ImGui_Template/blob/main/CirciutGUI/assets/temp/Snapshot.png)
+![](https://github.com/IrfanJames/Physics-Simulator/blob/main/PhysicsSim/assets/temp/Snapshot.png)
 
 - Resolves Collisions of:
   - [X] Quad with Quad
