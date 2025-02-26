@@ -99,28 +99,28 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <OutDir>$(ProjectDir)bin\$(Configuration)-$(Platform)\</OutDir>
-    <IntDir>$(ProjectDir)bin-Int\$(Configuration)-$(Platform)\</IntDir>
+    <OutDir>$(ProjectDir)bin\$(Configuration)-$(PlatformShortName)\</OutDir>
+    <IntDir>$(ProjectDir)bin-Int\$(Configuration)-$(PlatformShortName)\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <OutDir>$(ProjectDir)bin\$(Configuration)-$(Platform)\</OutDir>
-    <IntDir>$(ProjectDir)bin-Int\$(Configuration)-$(Platform)\</IntDir>
+    <OutDir>$(ProjectDir)bin\$(Configuration)-$(PlatformShortName)\</OutDir>
+    <IntDir>$(ProjectDir)bin-Int\$(Configuration)-$(PlatformShortName)\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Dist|Win32'">
-    <OutDir>$(ProjectDir)bin\$(Configuration)-$(Platform)\</OutDir>
-    <IntDir>$(ProjectDir)bin-Int\$(Configuration)-$(Platform)\</IntDir>
+    <OutDir>$(ProjectDir)bin\$(Configuration)-$(PlatformShortName)\</OutDir>
+    <IntDir>$(ProjectDir)bin-Int\$(Configuration)-$(PlatformShortName)\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <OutDir>$(ProjectDir)bin\$(Configuration)-$(Platform)\</OutDir>
-    <IntDir>$(ProjectDir)bin-Int\$(Configuration)-$(Platform)\</IntDir>
+    <OutDir>$(ProjectDir)bin\$(Configuration)-$(PlatformShortName)\</OutDir>
+    <IntDir>$(ProjectDir)bin-Int\$(Configuration)-$(PlatformShortName)\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <OutDir>$(ProjectDir)bin\$(Configuration)-$(Platform)\</OutDir>
-    <IntDir>$(ProjectDir)bin-Int\$(Configuration)-$(Platform)\</IntDir>
+    <OutDir>$(ProjectDir)bin\$(Configuration)-$(PlatformShortName)\</OutDir>
+    <IntDir>$(ProjectDir)bin-Int\$(Configuration)-$(PlatformShortName)\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Dist|x64'">
-    <OutDir>$(ProjectDir)bin\$(Configuration)-$(Platform)\</OutDir>
-    <IntDir>$(ProjectDir)bin-Int\$(Configuration)-$(Platform)\</IntDir>
+    <OutDir>$(ProjectDir)bin\$(Configuration)-$(PlatformShortName)\</OutDir>
+    <IntDir>$(ProjectDir)bin-Int\$(Configuration)-$(PlatformShortName)\</IntDir>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -128,7 +128,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(SolutionDir)Dependencies\sfml\x86\include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)Dependencies\sfml\$(PlatformShortName)\include</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -147,7 +147,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>SFML_STATIC;WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(SolutionDir)Dependencies\sfml\x86\include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)Dependencies\sfml\$(PlatformShortName)\include</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -168,7 +168,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>SFML_STATIC;WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(SolutionDir)Dependencies\sfml\x86\include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)Dependencies\sfml\$(PlatformShortName)\include</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -187,7 +187,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(SolutionDir)Dependencies\sfml\x64\include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)Dependencies\sfml\$(PlatformShortName)\include</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -206,7 +206,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>SFML_STATIC;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(SolutionDir)Dependencies\sfml\x64\include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)Dependencies\sfml\$(PlatformShortName)\include</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -227,7 +227,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>SFML_STATIC;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(SolutionDir)Dependencies\sfml\x64\include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)Dependencies\sfml\$(PlatformShortName)\include</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
